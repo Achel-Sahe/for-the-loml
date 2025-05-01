@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <!-- first page -->
+    <div class="back">
+        <img src="img/background.jpg" alt="" object-fit: cover;>
+    </div>
+    <div class="main">
+            <h1>Happy Birthday My Love</h1>
+            <h2>Enjel Iren. Pellaupessy</h2>
+            <br>
+            <button>Enjoy this website</button>
+    </div>
+
+    <!-- scnd page -->
+    <div class="second">
+        <p class="title">a simple quotes only for you</p>
+        <br><br><br><br>
+        <h1 class="animasi">Dear lin</h1>
+        <h3 class="animasi">Happy Birthday, my love. On this special day, I just want to remind you how much joy and light you bring into my life. You are the reason behind my smile, the one who always makes things better, no matter how the day has been. Thank you for being you — small in size, but huge in my heart.</h3>
+    </div>
+
+    <!-- thrd page  = quotes -->
+    <div class="third">
+        <br><br><br><br>
+        <p class="title" class="animasi">a piece of heaven</p>
+        <br><br><br><br><br><br><br><br>
+        <h1>Your Gallery</h1>
+        <br>
+        <div class="gallery" >
+            <img src="img/becb38b8-e732-4874-8068-d3208e36a699.jpeg" alt="" class="animasi">
+            <button class="animasi">gorgeous</button>
+            <img src="img/c0144694-8f3d-496c-a786-dab64ae2381d.jpeg" alt="" class="animasi">
+            <button class="animasi">pretty</button>
+            <img src="img/c111df28-8859-472c-aced-8d3ea6bbc03c.jpeg" alt="" class="animasi">
+            <button class="animasi">goddess</button>
+            <img src="img/c88cf83e-9539-4c6e-9a01-3688ee602170.jpeg" alt="" class="animasi">
+            <button class="animasi">enchantress</button>
+            <img src="img/fed425cf-0d36-43fb-b4a9-4d20247dd21c.jpeg" alt="" class="animasi">
+            <button class="animasi">treasure</button>
+        </div>
+    </div>
+
+    <!-- fourth page = gallery -->
+    <div class="fourth">
+        <div class="last" class="animasi">
+            <h1>>_<</h1>
+            <h3>Thank you for being the most wonderful part of my life. Happy birthday</h3>
+            <p class="copyright">copyright by ur man</p>
+        </div>
+    </div>
+
+
+    <!-- Tombol Play/Pause Musik -->
+<div class="music-control">
+    <button id="toggleMusic"> ♫ > play</button>
+</div>
+
+<!-- Audio -->
+<audio id="bgm">
+    <source src="Nothing.mp3" type="audio/mp3">
+</audio>
+
+    <audio autoplay >
+        <source src="Nothing.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script>
+        const music = document.getElementById('bgm');
+        const toggleBtn = document.getElementById('toggleMusic');
+    
+        toggleBtn.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                toggleBtn.textContent = ' ♫ > pause';
+            } else {
+                music.pause();
+                toggleBtn.textContent = ' ♫ > play';
+            }
+        });
+    </script>
+    
+</body>
+</html>
